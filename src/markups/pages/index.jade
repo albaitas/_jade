@@ -1,0 +1,16 @@
+extends ../main
+
+
+
+
+block title
+    | Pagrindinis
+
+block content
+
+    ul.list
+        each object, name in reviews
+            li.list__item
+                .name= object['title']
+                .occ= object['occ']
+
